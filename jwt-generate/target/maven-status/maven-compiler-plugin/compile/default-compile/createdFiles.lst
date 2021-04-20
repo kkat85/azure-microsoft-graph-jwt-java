@@ -1,0 +1,4 @@
+jwttoken\ConvertHexToString.class
+jwttoken\GetHexBinaryFromCertificate.class
+jwttoken\GetKeyFromCertificate.class
+jwttoken\GenerateJWTToken.class
