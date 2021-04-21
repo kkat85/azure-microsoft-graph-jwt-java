@@ -33,7 +33,7 @@ public class GenerateJWTToken {
 		String certSHA1HashValue = GetHexBinaryFromCertificate.getHexBinaryFromCertificate(certPath, certPassword); //get Hex from Cert
 
 		Map<String, Object> header = new HashMap<String, Object>(); //Add x5t header
-		header.put("x5t", ConvertHexToString.convertHexToString(certSHA1HashValue));
+		header.put("x5t", ConvertHexToString.convertHexToString(certSHA1HashValue)); //this Header x5t parameter is required for Microsoft AccessToken
 		
 		Map<String, Object> claims = new HashMap<String, Object>(); //Add payload
 		claims.put("aud", audience);
